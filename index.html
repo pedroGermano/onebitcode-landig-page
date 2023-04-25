@@ -16,33 +16,38 @@
   </head>
   <body>
     <header>
-      <img src="img/logo.svg" alt="Tom Jazz School" />
-      <nav class="mt-1 mx-auto">
-        <a href="#">Início</a>
-        <a href="#">Início</a>
-        <a href="#">Eventos</a>
-        <a href="#">Contato</a>
-      </nav>
-      <a class="btn mt-1 mb-1 mx-auto" href="#">Se Inscreva</a>
+      <div class="container">
+        <img src="img/logo.svg" alt="Tom Jazz School" />
+        <nav>
+          <a href="#">Início</a>
+          <a href="#">Cursos</a>
+          <a href="#">Eventos</a>
+          <a href="#">Contato</a>
+        </nav>
+        <a class="btn mt-1 mb-1 mx-auto" href="#">Se Inscreva</a>
+      </div>
     </header>
 
     <main>
       <section class="hero-section">
-        <img src="img/hero-img.svg" alt="Banda Jazz" />
-        <div>
-          <h1 class="mt-2">
-            Crie algo <span class="text-primary decoration">impactante</span> com música
-          </h1>
-          <p class="mt-2 mb-2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <a class="btn" href="#">Comece Agora</a>
+        <div class="container row-reverse">
+          <img src="img/hero-img.svg" alt="Banda Jazz" />
+          <div>
+            <h1 class="mt-2">
+              Crie algo
+              <span class="text-primary decoration">impactante</span> com música
+            </h1>
+            <p class="mt-2 mb-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a class="btn" href="#">Comece Agora</a>
+          </div>
         </div>
       </section>
       <section class="course-section">
         <div class="cards">
-          <article>
+          <article class="card">
             <img src="img/piano.png" alt="Piano icone" />
             <strong>Piano popular</strong>
             <p>
@@ -54,7 +59,7 @@
             </a>
           </article>
 
-          <article>
+          <article class="card">
             <img src="img/clef.png" alt="Clave" />
             <strong>Teoria musical</strong>
             <p>
@@ -66,7 +71,7 @@
             </a>
           </article>
 
-          <article>
+          <article class="card">
             <img src="img/sax.png" alt="Sax Alto" />
             <strong>Sax alto</strong>
             <p>
@@ -77,7 +82,7 @@
               <img src="img/arrow-right.svg" alt="Arrow" />
             </a>
           </article>
-          <article>
+          <article class="card">
             <img src="img/drums.png" alt="Bateria" />
             <strong>Bateria</strong>
             <p>
@@ -90,38 +95,45 @@
           </article>
         </div>
 
-        <h2>E <span class="text-primary">vários</span> outros!</h2>
+        <h2 class="text-center">
+          E <span class="text-primary">vários</span> outros!
+        </h2>
 
-        <a class="btn" href="#">Conhecer cursos</a>
+        <a class="btn mx-auto mt-2" href="#">Conhecer cursos</a>
       </section>
     </main>
     <footer>
-      <div>
-        <img src="img/logo.svg" alt="Tom's Jazz School" />
+      <div class="container">
+        <div class="about-service">
+          <img class="mb-1 mt-1" src="img/logo.svg" alt="Tom's Jazz School" />
 
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+
+        <nav class="mb-2">
+          <a href="#">Início</a>
+          <a href="#">Cursos</a>
+          <a href="#">Eventos</a>
+          <a href="#">Contato</a>
+        </nav>
+
+        <form class="newsletterform">
+          <label class="mb-1" for="email"
+            >Receba materias gratuitos no seu email</label
+          >
+          <input
+            class="mb-1"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Digite o seu e-mail"
+          />
+          <button class="btn" type="submit">Quero Receber</button>
+        </form>
       </div>
-
-      <nav>
-        <a href="#">Início</a>
-        <a href="#">Início</a>
-        <a href="#">Eventos</a>
-        <a href="#">Contato</a>
-      </nav>
-
-      <form>
-        <label for="email">Receba materias gratuitos no seu email</label>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Digite o seu e-mail"
-        />
-        <button class="btn" type="submit">Quero Receber</button>
-      </form>
     </footer>
   </body>
 </html>
